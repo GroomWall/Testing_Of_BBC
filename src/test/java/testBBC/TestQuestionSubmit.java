@@ -46,7 +46,6 @@ public class TestQuestionSubmit extends WebDriverSettings {
         String expectedScoreHibernian = "1";
         String actualScoreHibernian = driver.findElement(By.xpath("//span[@class='fixture__number fixture__number--away fixture__number--ft']")).getText();
 
-
         Assert.assertEquals(expectedScoreAberdeen,actualScoreAberdeenText,"Results is not as expected!");
         Assert.assertEquals(expectedScoreHibernian,actualScoreHibernian,"Results is not as expected!");
     }
@@ -86,7 +85,6 @@ public class TestQuestionSubmit extends WebDriverSettings {
         String actualScoreAberdeenText = actualScoreAberdeen.getText();
         String expectedScoreHibernian = "0";
         String actualScoreHibernian = driver.findElement(By.xpath("//span[@class='fixture__number fixture__number--away fixture__number--ft']")).getText();
-
 
         Assert.assertEquals(expectedScoreAberdeen,actualScoreAberdeenText,"Results is not as expected!");
         Assert.assertEquals(expectedScoreHibernian,actualScoreHibernian,"Results is not as expected!");
@@ -129,7 +127,6 @@ public class TestQuestionSubmit extends WebDriverSettings {
         String expectedScoreHibernian = "0";
         String actualScoreHibernian = driver.findElement(By.xpath("//span[@class='fixture__number fixture__number--away fixture__number--ft']")).getText();
 
-
         Assert.assertEquals(expectedScoreAberdeen,actualScoreAberdeenText,"Results is not as expected!");
         Assert.assertEquals(expectedScoreHibernian,actualScoreHibernian,"Results is not as expected!");
     }
@@ -170,7 +167,6 @@ public class TestQuestionSubmit extends WebDriverSettings {
         String actualScoreAberdeenText = actualScoreAberdeen.getText();
         String expectedScoreHibernian = "0";
         String actualScoreHibernian = driver.findElement(By.xpath("//span[@class='fixture__number fixture__number--away fixture__number--ft']")).getText();
-
 
         Assert.assertEquals(expectedScoreAberdeen,actualScoreAberdeenText,"Results is not as expected!");
         Assert.assertEquals(expectedScoreHibernian,actualScoreHibernian,"Results is not as expected!");
