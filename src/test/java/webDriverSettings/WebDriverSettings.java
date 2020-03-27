@@ -3,7 +3,6 @@ package webDriverSettings;
 import org.junit.After;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -16,6 +15,7 @@ public class WebDriverSettings {
 
     protected static WebDriver driver;
     protected static WebDriverWait wait;
+
     @BeforeClass
     public static void setUp() {
         driver = new ChromeDriver();
@@ -23,13 +23,13 @@ public class WebDriverSettings {
         wait = new WebDriverWait(driver, 10);
     }
 
-    public void waiting(String xpath){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
-    }
-
     @AfterClass
     public static void tearDown() {
         driver.quit();
+    }
+
+    public void waiting(String xpath) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
     }
 
     @After
