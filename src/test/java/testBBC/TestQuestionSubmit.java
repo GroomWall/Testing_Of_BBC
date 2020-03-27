@@ -8,7 +8,7 @@ import webDriverSettings.WebDriverSettings;
 
 public class TestQuestionSubmit extends WebDriverSettings {
     @Test
-    public void Aberdeen(){
+    public void Aberdeen() {
         driver.get("https://www.bbc.com/");
         waiting("//div[@id='orb-nav-links']//a[contains(text(),'Sport')]");
 
@@ -43,12 +43,12 @@ public class TestQuestionSubmit extends WebDriverSettings {
         String expectedScoreHibernian = "1";
         String actualScoreHibernian = driver.findElement(By.xpath("//span[@class='fixture__number fixture__number--away fixture__number--ft']")).getText();
 
-        Assert.assertEquals(expectedScoreAberdeen,actualScoreAberdeenText,"Results is not as expected!");
-        Assert.assertEquals(expectedScoreHibernian,actualScoreHibernian,"Results is not as expected!");
+        Assert.assertEquals(expectedScoreAberdeen, actualScoreAberdeenText, "Results is not as expected!");
+        Assert.assertEquals(expectedScoreHibernian, actualScoreHibernian, "Results is not as expected!");
     }
 
     @Test
-    public void Celtic(){
+    public void Celtic() {
         driver.get("https://www.bbc.com/");
         waiting("//div[@id='orb-nav-links']//a[contains(text(),'Sport')]");
 
@@ -83,12 +83,12 @@ public class TestQuestionSubmit extends WebDriverSettings {
         String expectedScoreHibernian = "0";
         String actualScoreHibernian = driver.findElement(By.xpath("//span[@class='fixture__number fixture__number--away fixture__number--ft']")).getText();
 
-        Assert.assertEquals(expectedScoreAberdeen,actualScoreAberdeenText,"Results is not as expected!");
-        Assert.assertEquals(expectedScoreHibernian,actualScoreHibernian,"Results is not as expected!");
+        Assert.assertEquals(expectedScoreAberdeen, actualScoreAberdeenText, "Results is not as expected!");
+        Assert.assertEquals(expectedScoreHibernian, actualScoreHibernian, "Results is not as expected!");
     }
 
     @Test
-    public void HeartOfMidlothian(){
+    public void HeartOfMidlothian() {
         driver.get("https://www.bbc.com/");
         waiting("//div[@id='orb-nav-links']//a[contains(text(),'Sport')]");
 
@@ -123,12 +123,12 @@ public class TestQuestionSubmit extends WebDriverSettings {
         String expectedScoreHibernian = "0";
         String actualScoreHibernian = driver.findElement(By.xpath("//span[@class='fixture__number fixture__number--away fixture__number--ft']")).getText();
 
-        Assert.assertEquals(expectedScoreAberdeen,actualScoreAberdeenText,"Results is not as expected!");
-        Assert.assertEquals(expectedScoreHibernian,actualScoreHibernian,"Results is not as expected!");
+        Assert.assertEquals(expectedScoreAberdeen, actualScoreAberdeenText, "Results is not as expected!");
+        Assert.assertEquals(expectedScoreHibernian, actualScoreHibernian, "Results is not as expected!");
     }
 
     @Test
-    public void Livingston(){
+    public void Livingston() {
         driver.get("https://www.bbc.com/");
         waiting("//div[@id='orb-nav-links']//a[contains(text(),'Sport')]");
 
@@ -163,7 +163,7 @@ public class TestQuestionSubmit extends WebDriverSettings {
         String expectedScoreHibernian = "0";
         String actualScoreHibernian = driver.findElement(By.xpath("//span[@class='fixture__number fixture__number--away fixture__number--ft']")).getText();
 
-        Assert.assertEquals(expectedScoreAberdeen,actualScoreAberdeenText,"Results is not as expected!");
-        Assert.assertEquals(expectedScoreHibernian,actualScoreHibernian,"Results is not as expected!");
+        Assert.assertEquals(expectedScoreAberdeen, actualScoreAberdeenText, "Results is not as expected!");
+        Assert.assertEquals(expectedScoreHibernian, actualScoreHibernian, "Results is not as expected!");
     }
 }
